@@ -1,0 +1,477 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #f7f7f7;
+}
+
+#main-container{
+    width: 85vw;
+    height: 75vh;
+    margin: auto;
+    margin-top: 3rem;
+    /* border: 1px solid red; */
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+#child-container1{
+    width: 64%;
+    /* border: 1px solid blue; */
+    box-shadow: 1px 1px 30px -15px black;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    /* padding:  */
+}
+#child-container2{
+    width: 35%;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+
+
+
+/*#############Left Hand(Order-list) part CSS starts Here################*/
+h1{
+    width: 100%;
+    /* border: 1px solid green; */
+    height: 10%;
+    font-size: 1.5rem;
+    padding: 2rem 1rem 0px 1rem;
+}
+#first-item, #second-item{
+    /* border: 1px solid green; */
+    width: 100%;
+    height: 45%;
+    display: flex;
+}
+#first-item{
+    border: 1px solid #deddd9;
+}
+
+
+.item-image{
+    /* border: 1px solid black; */
+    width: 40%;
+    height: 100%;
+    padding: 1.5rem 1rem 2rem 1rem;
+}
+img{
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid yellow; */
+    box-shadow: 1px 1px 30px -15px black;
+}
+.item-description{
+    /* border: 1px solid black; */
+    width: 60%;
+    height: 100%;
+    padding: 1.5rem 0px 2rem 0px;
+    display: flex;
+    flex-direction: column;
+}
+.description-content{
+    /* border: 1px solid red; */
+    width: 100%;
+}
+.description-line1{
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1.5rem 0.5rem 0px;
+}
+h3{
+    font-size: 1.5rem;
+    width: 75%;
+}
+.quantity-counter{
+    /* border: 1px solid black; */
+    width: 25%;
+    display: flex;
+    text-align: center;
+}
+.product-quantity{
+    width: 25%;
+    height: 60%;
+    border: 1px solid #deddd9;
+    padding-top: 6px;
+}
+.product-quantity:hover{
+    background-color:#dbdad5;
+    cursor: pointer;
+    
+}
+.show-selected-quantity{
+    width: 50%;
+    height: 60%;
+    border: 1px solid #deddd9;
+    font-size: 1.3rem;
+    padding-top: 2px;
+}
+.description-line2{
+    height: 50%;
+    padding: 0.5rem 1.5rem 0.5rem 0px;
+}
+p{
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #6b6a67;
+    padding: 0.5rem 0px;
+}
+
+.description-line3{
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1.5rem 0.5rem 0px;
+}
+.remove-btn{
+    display: flex;
+    justify-content: space-between;
+    width: 23%;
+}
+.remove-btn:hover{
+    cursor: pointer;
+}
+.remove-btn i:hover{
+    color: #8a8984;
+}
+.line3-icon{
+    padding-top: 0.5rem;
+}
+.wish-list{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+.wish-list:hover{
+    cursor: pointer;
+}
+.wish-list i:hover{
+    color: red;
+}
+.price p{
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+
+/* ######### Left Hand(Order list) part CSS ends Here ############### */
+
+
+
+
+
+
+
+/*############# Total Amount & Delivery Date section CSS starts Here ################*/
+#total-amount{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 47%;
+    box-shadow: 1px 1px 30px -15px black;
+}
+#total-amount h1{
+    height: 23.3%;
+    /* border: 1px solid black; */
+}
+#amount-plus-shipping{
+    height: 43.3%;
+    /* border: 1px solid black; */
+    border-bottom: 1px solid #deddd9;
+    display: flex;
+    flex-direction: column;
+}
+#product-amount, #shipping-amount{
+    /* border: 1px solid purple; */
+    height: 50%;
+    padding: 0px 1rem 0px 1rem;
+    display: flex;
+}
+#product-amount{
+    padding-top: 1.5rem;
+}
+#product-amount-text, #shipping-amount-text{
+    width: 80%;
+    /* border: 1px solid green; */
+}
+#product-amount-text p, #product-amount-number p, #shipping-amount-text p, #shipping-amount-number p{
+    text-transform: capitalize;
+    font-size: 1.2rem;
+}
+#product-amount-number, #shipping-amount-number{
+    width: 20%;
+    /* border: 1px solid green; */
+    text-align: right;
+}
+
+
+#display-total-amount{
+    height: 33.3%;
+    /* border: 1px solid black; */
+    padding: 0px 1rem 0px 1rem;
+}
+#product-plus-shipping-amount{
+    /* border: 2px solid blue; */
+    display: flex;
+    height: 50%;
+    width: 100%;
+}
+#product-plus-shipping-amount-text{
+    /* border: 1px solid purple; */
+    width: 80%;
+}
+#product-plus-shipping-amount-text p{
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    color: black;
+}
+#product-plus-shipping-amount-number{
+    /* border: 1px solid purple; */
+    width: 20%;
+}
+#product-plus-shipping-amount-number p{
+    font-size: 1.2rem;
+    color: black;
+    text-align: right;
+}
+
+#checkout-btn{
+    background-color: #1E90FF;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    height: 30%;
+    width: 28%;
+    border-radius: 5px;
+}
+#checkout-btn:hover, #apply-coupon-btn:hover{
+    background-color: #57a5f3;
+    cursor: pointer;
+}
+
+
+
+
+#discount-code-section{
+    margin-top: 2rem;
+    /* border: 1px solid red; */
+    box-shadow: 1px 1px 30px -15px black;
+    height: 30%;
+    padding: 0px 1rem 0px 1rem;
+}
+
+#discount-code-heading{
+    height: 25.3%;
+    width: 100%;
+    /* border: 1px solid blue; */
+    display: flex;
+}
+#discount-code-heading-text{
+    /* border: 1px solid purple; */
+    width: 80%;
+    height: 100%;
+}
+#discount-code-heading-text p{
+    text-transform: none;
+    font-size: 1.2rem;
+}
+#discount-code-heading-icon{
+    /* border: 1px solid purple; */
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+#discount-code-heading-icon i{
+    text-align: right;
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+}
+
+#discount-code-input{
+    /* border: 1px solid red; */
+    height: 43.3%;
+}
+#discount-code-input-field{
+    width: 100%;
+    height: 50%;
+    border: 1px solid #deddd9;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+}
+#discount-code-input p{
+    text-transform: none;
+}
+#apply-coupon-btn{
+    padding: 0.3rem 0.5rem;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #1E90FF;
+    color: white;
+    /* border: 1px solid green; */
+    margin-top: 0.8rem;
+}
+
+
+
+
+
+
+
+#delivery-date-section{
+    margin-top: 2rem;
+    /* border: 1px solid red; */
+    box-shadow: 1px 1px 30px -15px black;
+    height: 15%;
+}
+#delivery-date-section p{
+    margin-top: 2rem;
+    text-transform: none;
+    padding-left: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*#################### Media Query Part Starts Here ####################*/
+
+@media screen and (max-width: 1788px){
+    #main-container{
+        flex-direction: column;
+        height: auto;
+        
+    }
+    #child-container1{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+    #child-container2{
+        width: 80%;
+        margin: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #total-amount{
+        width: 60%;
+        height: 50vh;
+    }
+    #discount-code-section{
+        width:38%;
+        height: 50vh;
+        margin-top: 0rem;
+    }
+    #discount-code-input-field{
+        height: 2.5rem;
+    }
+    #delivery-date-section{
+        width: 100%;
+    }
+    .quantity-counter{
+        height: 3rem;
+    }
+    
+}
+
+@media screen and (max-width: 1400px){
+    p{
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 1170px){
+    .remove-btn p, .wish-list p{
+        display: none;
+    }
+    #checkout-btn{
+        width: 8rem;
+    }
+}
+
+@media screen and (max-width: 877px){
+    #child-container1, #child-container2{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 717px){
+    #total-amount, #discount-code-section{
+        width: 100%;
+    }
+    #discount-code-section{
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width:513px){
+    .description-line1 h3{
+        font-size: 1rem;
+    }
+    .quantity-counter{
+        height: 2rem;
+    }
+    .product-quantity i, .show-selected-quantity{
+        font-size: 0.8rem;
+    }
+    .product-quantity{
+        display: flex;
+        align-items: center;
+    }
+    .product-quantity i{
+        padding-bottom: 0.3rem;
+    }
+}
+@media screen and (max-width: 400px){
+    .description-line1 h3{
+        font-size: 0.8rem;
+        width: 60%;
+    }
+    .product-quantity{
+        width: 40%;
+    }
+    .product-quantity i{
+        /* padding: 0.2rem; */
+    }
+    #product-amount-text, #shipping-amount-text, #product-plus-shipping-amount-text{
+        width: 60%;
+    }
+    #product-amount-text p, #product-amount-number p, #shipping-amount-text p, #shipping-amount-number p{
+        font-size: 1.1rem;
+    }
+    #product-amount-number, #shipping-amount-number, #product-plus-shipping-amount-number{
+        width: 40%;
+    }
+}
+
+
+/*################ Media Query Section Ends Here ####################*/
+
+
+.red-bg{
+    background-color: red;
+}

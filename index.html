@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <title>Shopping Cart</title>
+        <link rel='stylesheet' href='style.css'>
+        <script src="https://kit.fontawesome.com/2828aab853.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section id='main-container'>
+
+            <!--Left Hand(Items List) part HTML Starts Here-->
+            <section id='child-container1'>
+                <h1>Cart (2 items)</h1>
+
+                <!--First item HTML starts Here-->
+                <section id='first-item'>
+                    <section class='item-image'>
+                        <img src='images/lap.jpeg'>
+                    </section>
+                    <section class='item-description'>
+                        <section class='description-line1 description-content'>
+                            <h3>Lenovo Ideapad</h3>
+                            <div class='quantity-counter'>
+                                <div class='product-quantity minus-btn' id='first-item-minus'><i class="fa fa-minus" aria-hidden="true"></i></div>
+                                <div class='show-selected-quantity' id='first-item-quantity'>0</div>
+                                <div class='product-quantity plus-btn' id='first-item-plus'><i class="fa fa-plus" aria-hidden="true"></i></div>
+                            </div>
+                        </section>
+                        <section class='description-line2 description-content'>
+                            <p>color: blue</p>
+                            <p>Memory: 500gb</p>
+                            <p>ram: 3gb</p>
+                        </section>
+                        <section class='description-line3 description-content'>
+                            <div class='remove-btn line3-item' id='first-item-remove-btn'>
+                                <i class="fa fa-trash-o line3-icon" aria-hidden="true"></i>
+                                <p>remove item</p>
+                            </div>
+                            <div class='wish-list line3-item'>
+                                <i class="fa fa-heart line3-icon" aria-hidden="true"></i>
+                                <p>move to wishlist</p>
+                            </div>
+                            <span class='price line3-item' id='first-item-price'><p>$0.00</p></span>
+                        </section>
+                    </section>
+                </section>
+                <!--First item HTML ends Here-->
+
+
+
+
+                <!--Second item HTML starts Here-->
+                <section id='second-item'>
+                    <section class='item-image'>
+                        <img src='images/mbl.jpg'>
+                    </section>
+                    <section class='item-description'>
+                        <section class='description-line1 description-content'>
+                            <h3>Samsung Galaxy</h3>
+                            <div class='quantity-counter'>
+                                <div class='product-quantity minus-btn' id='second-item-minus'><i class="fa fa-minus" aria-hidden="true"></i></div>
+                                <div class='show-selected-quantity' id='second-item-quantity'>0</div>
+                                <div class='product-quantity plus-btn' id='second-item-plus'><i class="fa fa-plus" aria-hidden="true"></i></div>
+                            </div>
+                        </section>
+                        <section class='description-line2 description-content'>
+                            <p>color: black</p>
+                            <p>Memory: 64gb</p>
+                            <p>ram: 2gb</p>
+                        </section>
+                        <section class='description-line3 description-content'>
+                            <div class='remove-btn line3-item' id='second-item-remove-btn'>
+                                <i class="fa fa-trash-o line3-icon" aria-hidden="true"></i>
+                                <p>remove item</p>
+                            </div>
+                            <div class='wish-list line3-item'>
+                                <i class="fa fa-heart line3-icon" aria-hidden="true"></i>
+                                <p>move to wishlist</p>
+                            </div>
+                            <span class='price line3-item' id='second-item-price'><p>$0.00</p></span>
+                        </section>
+                    </section>
+                </section>
+                <!--Second item HTML ends Here-->
+
+
+            </section>
+            <!--Left Hand(Product List) part HTML ends Here-->
+
+
+            <!--Right Hand(Delivery & Shipping) part HTML starts Here-->
+            <section id='child-container2'>
+                <section id='total-amount'>
+                    <h1>The Total Amount Of</h1>
+                    <section id='amount-plus-shipping'>
+                        <div id='product-amount'>
+                            <div id='product-amount-text'>
+                                <p>Product Amount</p>
+                            </div>
+                            <div id='product-amount-number'>
+                                <p>$ 0.00</p>
+                            </div>
+                        </div>
+                        <div id='shipping-amount'>
+                            <div id='shipping-amount-text'>
+                                <p>Shipping Charge</p>
+                            </div>
+                            <div id='shipping-amount-number'>
+                                <p>$ 50.00</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section id='display-total-amount'>
+                        <div id='product-plus-shipping-amount'>
+                            <div id='product-plus-shipping-amount-text'>
+                                <p>Total Amount</p>
+                            </div>
+                            <div id='product-plus-shipping-amount-number'>
+                                <p>S 0.00</p>
+                            </div>
+                        </div>
+                        <button id='checkout-btn'>CHECKOUT</button>
+                    </section>
+                </section>
+                <section id='discount-code-section'>
+                    <div id='discount-code-heading'>
+                        <div id='discount-code-heading-text'>
+                            <p>Add a discount code (optional)</p>
+                        </div>
+                        <div id='discount-code-heading-icon'>
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div id='discount-code-input'>
+                        <input type='text' id='discount-code-input-field' placeholder='Enter discount code'>
+                        <p>code is hello</p>
+                    </div>
+                    <button id='apply-coupon-btn'>Apply</button>
+                </section>
+                <section id='delivery-date-section'>
+                    <h1>Expected delivery date</h1>
+                    <p>Jan 2nd 2021 - Jan 31st 2021<p>
+                </section>
+            </section>
+            <!--Right Hand(Delivery & Shipping) part HTML ends Here-->
+        </section>
+
+        <script src='index.js'></script>
+    </body>
+</html>
